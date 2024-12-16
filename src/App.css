@@ -1,0 +1,134 @@
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Removes gaps between cells */
+    margin: 20px 0; /* Adds some spacing above and below the table */
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Add a caption for accessibility and style it */
+caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Table header styling */
+thead th {
+    background-color:black; /* Green background for headers */
+    color: white; /* White text for headers */
+    padding: 10px; /* Adds padding inside header cells */
+    border: 1px solid #ddd; /* Adds a light border to header cells */
+}
+
+/* Table body styling */
+tbody td {
+    padding: 10px; /* Adds padding inside body cells */
+    border: 1px solid #ddd; /* Adds a light border to body cells */
+}
+
+/* Alternate row colors for better readability */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+}
+
+/* Add hover effect for rows */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Light highlight on hover */
+}
+
+/* Responsive table: Add horizontal scrolling for small screens */
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto; /* Enable scrolling on small screens */
+        white-space: nowrap; /* Prevent table cells from wrapping */
+    }
+}
+/* App.css */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.popup-actions button:first-child {
+    background: #28a745;
+    color: #fff;
+}
+
+.popup-actions button:first-child:hover {
+    background: #218838;
+}
+
+.popup-actions button:last-child {
+    background: #dc3545;
+    color: #fff;
+}
+
+.popup-actions button:last-child:hover {
+    background: #c82333;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #218838;
+    color: #fff;
+    margin-left: 10px;
+    
+    
+}
